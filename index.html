@@ -73,7 +73,7 @@
           </p>
         </div>
       </div>
-      <div class="column">
+      <div class="column column-2">
         <div class="column-img">
           <img
             class="column-img_freedom"
@@ -105,7 +105,7 @@
           </p>
         </div>
       </div>
-      <div class="column">
+      <div class="column column-4">
         <div class="column-img">
           <img
             class="column-img_work"
@@ -174,16 +174,20 @@
     <div class="form">
       <img src="./public/img/bg-footer-squiggle.svg" alt="" />
       <h2 class="form_title">Get notified when we launch</h2>
-      <form action="post">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email address"
-        />
-        <small class="emaill_error"></small>
+      <form id="form" action="/" method="post">
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+          <small></small>
+        </div>
         <button class="btn" type="submit">Get notified</button>
       </form>
     </div>
+
+    <script src="./public/js/main.js"></script>
   </body>
 </html>

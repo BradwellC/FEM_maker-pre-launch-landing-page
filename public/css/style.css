@@ -484,8 +484,6 @@ span {
 
   border: none;
   outline: none;
-
-  margin-bottom: 24px;
 }
 
 #email::placeholder {
@@ -505,6 +503,27 @@ span {
   font-weight: 800;
 
   line-height: 25px;
+}
+
+#email.error {
+  border: 2px solid var(--clr-600);
+}
+
+.error {
+  color: var(--clr-600);
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 500;
+
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 24px;
 }
 
 .btn {
@@ -548,6 +567,7 @@ span {
     grid-template-columns: 180px 457px 1fr;
 
     column-gap: 10px;
+    overflow: hidden;
   }
 
   .heading_img-left {
@@ -622,6 +642,8 @@ span {
   .form img {
     width: 1044px;
     height: 140px;
+
+    overflow: hidden;
   }
 
   .form form {
@@ -637,5 +659,145 @@ span {
   .btn {
     padding: 0 10px;
     width: 130px;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    padding: 2.5rem 0 3.5rem;
+    display: flex;
+    flex-direction: column;
+
+    margin-inline: auto;
+    width: 1110px;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 1553px;
+
+    column-gap: 10px;
+
+    position: relative;
+    left: -3.7%;
+  }
+
+  .heading_img-left {
+    display: block;
+    width: 408px;
+    height: 459px;
+
+    position: relative;
+    left: 0;
+  }
+
+  .heading_img-right {
+    display: block;
+
+    grid-column: 3 / 4;
+    width: 396px;
+    height: 444px;
+  }
+
+  .heading_center {
+    width: 730px;
+  }
+
+  .four-column {
+    width: 1110px;
+    /* margin-inline: auto; */
+
+    margin: 4rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: 383px;
+
+    column-gap: 30px;
+  }
+
+  .four-column .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+
+    width: 255px;
+    height: 335px;
+
+    text-align: left;
+  }
+
+  .column.column-2,
+  .column.column-4 {
+    margin-top: auto;
+  }
+
+  .subscribe_pricing {
+    width: 920px;
+    margin: 5rem auto;
+  }
+
+  .pricing {
+    width: 520px;
+    margin-inline: auto;
+  }
+
+  .pricing_heading {
+    padding-bottom: 24px;
+  }
+
+  .two-columns {
+    grid-row: 2 / 3;
+
+    margin-inline: auto;
+    width: 920px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 445px);
+    column-gap: 30px;
+    row-gap: 0;
+  }
+
+  .free_column {
+    height: 445px;
+
+    margin-top: auto;
+    margin-bottom: 15px;
+  }
+
+  .free_column-content {
+    height: 425px;
+  }
+
+  .paid_column {
+    height: 485px;
+  }
+
+  .form {
+    width: 730px;
+    height: 134px;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form img {
+    width: 1664px;
+    height: 228px;
+  }
+
+  .btn {
+    width: 140px;
   }
 }
